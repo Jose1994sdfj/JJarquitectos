@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JJ Arquitectos | Jesús Juárez Despacho de Arquitectura</title>
+  <meta name="description" content="Despacho de arquitectura de Jesús Juárez. Diseño con intención, construcción con precisión. Proyectos residenciales, comerciales y culturales en México." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVEGACIÓN
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo JJ -->
+      <a href="#inicio" class="logo" data-testid="link-logo">
+        <svg class="logo-svg" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" aria-label="JJ Arquitectos">
+          <rect width="60" height="60" fill="#111"/>
+          <!-- J izquierda -->
+          <rect x="10" y="12" width="8" height="28" fill="#fff"/>
+          <rect x="2"  y="34" width="16" height="6" fill="#fff"/>
+          <rect x="2"  y="34" width="6"  height="10" fill="#fff" rx="3"/>
+          <!-- J derecha -->
+          <rect x="26" y="12" width="8" height="28" fill="#C0392B"/>
+          <rect x="18" y="34" width="16" height="6" fill="#C0392B"/>
+          <rect x="18" y="34" width="6"  height="10" fill="#C0392B" rx="3"/>
+          <!-- Línea base -->
+          <rect x="2" y="44" width="36" height="2" fill="#fff"/>
+        </svg>
+        <span class="logo-text">JJ <em>Arquitectos</em></span>
+      </a>
+
+      <!-- Links nav -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#servicios" data-testid="link-servicios">Servicios</a></li>
+        <li><a href="#proyectos" data-testid="link-proyectos">Proyectos</a></li>
+        <li><a href="#filosofia" data-testid="link-filosofia">Filosofía</a></li>
+        <li><a href="#contacto" data-testid="link-contacto">Contacto</a></li>
+      </ul>
+
+      <a href="#contacto" class="btn btn-primary nav-cta" data-testid="button-consulta">Consulta Gratuita</a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" data-testid="button-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <!-- Patrón arquitectónico SVG de fondo -->
+      <svg class="hero-pattern" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <rect width="800" height="600" fill="#1a1a1a"/>
+        <!-- Grid lines -->
+        <g stroke="#333" stroke-width="0.5" opacity="0.6">
+          <line x1="0" y1="100" x2="800" y2="100"/>
+          <line x1="0" y1="200" x2="800" y2="200"/>
+          <line x1="0" y1="300" x2="800" y2="300"/>
+          <line x1="0" y1="400" x2="800" y2="400"/>
+          <line x1="0" y1="500" x2="800" y2="500"/>
+          <line x1="100" y1="0" x2="100" y2="600"/>
+          <line x1="200" y1="0" x2="200" y2="600"/>
+          <line x1="300" y1="0" x2="300" y2="600"/>
+          <line x1="400" y1="0" x2="400" y2="600"/>
+          <line x1="500" y1="0" x2="500" y2="600"/>
+          <line x1="600" y1="0" x2="600" y2="600"/>
+          <line x1="700" y1="0" x2="700" y2="600"/>
+        </g>
+        <!-- Edificio abstracto -->
+        <rect x="250" y="150" width="120" height="350" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+        <rect x="390" y="80"  width="160" height="420" fill="#222"   stroke="#444" stroke-width="1"/>
+        <rect x="570" y="200" width="80"  height="300" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+        <!-- Ventanas -->
+        <g fill="#C0392B" opacity="0.7">
+          <rect x="260" y="170" width="20" height="28"/>
+          <rect x="290" y="170" width="20" height="28"/>
+          <rect x="320" y="170" width="20" height="28"/>
+          <rect x="260" y="215" width="20" height="28"/>
+          <rect x="290" y="215" width="20" height="28"/>
+          <rect x="320" y="215" width="20" height="28"/>
+          <rect x="260" y="260" width="20" height="28"/>
+          <rect x="290" y="260" width="20" height="28"/>
+          <rect x="320" y="260" width="20" height="28"/>
+          <rect x="400" y="100" width="24" height="32"/>
+          <rect x="434" y="100" width="24" height="32"/>
+          <rect x="468" y="100" width="24" height="32"/>
+          <rect x="502" y="100" width="24" height="32"/>
+          <rect x="400" y="148" width="24" height="32"/>
+          <rect x="434" y="148" width="24" height="32"/>
+          <rect x="468" y="148" width="24" height="32"/>
+          <rect x="502" y="148" width="24" height="32"/>
+        </g>
+        <!-- Acento rojo -->
+        <rect x="390" y="80" width="6" height="420" fill="#C0392B" opacity="0.8"/>
+        <!-- Texto plano de fondo -->
+        <text x="50" y="580" font-family="monospace" font-size="11" fill="#333">
+          JJ ARQUITECTOS — DESPACHO DE ARQUITECTURA — JESÚS JUÁREZ
+        </text>
+      </svg>
+    </div>
+
+    <div class="hero-content" data-animate="fade-up">
+      <p class="hero-label">Despacho de Arquitectura</p>
+      <h1 class="hero-title">
+        Espacios que<br/>
+        <span class="accent">Inspiran</span>
+      </h1>
+      <p class="hero-sub">
+        Diseñamos con propósito. Construimos con precisión.<br/>
+        Cada proyecto es una obra que trasciende el tiempo.
+      </p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn btn-primary" data-testid="button-ver-proyectos">Ver Proyectos</a>
+        <a href="#contacto" class="btn btn-outline" data-testid="button-contactar">Contactar</a>
+      </div>
+    </div>
+
+    <!-- Indicador scroll -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CIFRAS / ESTADÍSTICAS
+  ═══════════════════════════════════════════ -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-animate="fade-up">
+          <span class="stat-number" data-count="18">0</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="100">
+          <span class="stat-number" data-count="120">0</span>
+          <span class="stat-label">Proyectos realizados</span>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="200">
+          <span class="stat-number" data-count="94">0</span>
+          <span class="stat-label">Clientes satisfechos</span>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="300">
+          <span class="stat-number" data-count="8">0</span>
+          <span class="stat-label">Premios nacionales</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICIOS
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2 class="section-title">Servicios<br/><span class="accent">Especializados</span></h2>
+        <p class="section-desc">Soluciones integrales de diseño arquitectónico para cada necesidad y escala de proyecto.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-animate="fade-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="28" width="32" height="4" fill="currentColor"/>
+              <polygon points="20,4 4,28 36,28" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="15" y="18" width="10" height="10" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="service-num">01</span>
+          <h3>Arquitectura Residencial</h3>
+          <p>Casas y conjuntos habitacionales diseñados para la vida contemporánea: funcionales, estéticos y sostenibles.</p>
+          <a href="#contacto" class="service-link">Solicitar información →</a>
+        </div>
+
+        <div class="service-card" data-animate="fade-up" data-delay="100">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="10" width="36" height="24" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="2" y="10" width="36" height="6" fill="currentColor" opacity="0.3"/>
+              <rect x="8" y="22" width="8" height="12" fill="currentColor" opacity="0.5"/>
+              <rect x="22" y="22" width="8" height="12" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+          <span class="service-num">02</span>
+          <h3>Arquitectura Comercial</h3>
+          <p>Oficinas, locales y edificios corporativos que proyectan la identidad de su marca con distinción.</p>
+          <a href="#contacto" class="service-link">Solicitar información →</a>
+        </div>
+
+        <div class="service-card" data-animate="fade-up" data-delay="200">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="20" y1="6" x2="20" y2="34" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <line x1="6" y1="20" x2="34" y2="20" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="20" cy="20" r="4" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="service-num">03</span>
+          <h3>Diseño de Interiores</h3>
+          <p>Espacios interiores que equilibran la belleza estética con el bienestar humano y la funcionalidad.</p>
+          <a href="#contacto" class="service-link">Solicitar información →</a>
+        </div>
+
+        <div class="service-card" data-animate="fade-up" data-delay="300">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="22" y="4" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="4" y="22" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="22" y="22" width="14" height="14" fill="currentColor" opacity="0.4"/>
+            </svg>
+          </div>
+          <span class="service-num">04</span>
+          <h3>Urbanismo y Planeación</h3>
+          <p>Visión urbana integral: masterplans, conjuntos mixtos y espacios públicos para comunidades vibrantes.</p>
+          <a href="#contacto" class="service-link">Solicitar información →</a>
+        </div>
+
+        <div class="service-card" data-animate="fade-up" data-delay="400">
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 36 L4 16 L20 4 L36 16 L36 36 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="14" y="24" width="12" height="12" fill="currentColor" opacity="0.5"/>
+              <line x1="20" y1="4" x2="20" y2="14" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="service-num">05</span>
+          <h3>Arquitectura Cultural</h3>
+          <p>Museos, galerías y espacios culturales que enriquecen el tejido social y urbano de las ciudades.</p>
+          <a href="#contacto" class="service-link">Solicitar información →</a>
+        </div>
+
+        <div class="service-card service-card--highlight" data-animate="fade-up" data-delay="500">
+          <span class="service-num">06</span>
+          <h3>Consultoría y Supervisión</h3>
+          <p>Asesoría técnica, revisión de proyectos y supervisión de obra para garantizar la calidad en cada etapa.</p>
+          <a href="#contacto" class="service-link">Solicitar información →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FILOSOFÍA
+  ═══════════════════════════════════════════ -->
+  <section class="section section--dark" id="filosofia">
+    <div class="container">
+      <div class="philosophy-layout">
+        <div class="philosophy-quote" data-animate="fade-right">
+          <blockquote>
+            "La arquitectura es el testigo más insobornable de la historia, porque no se puede hablar en nombre de un edificio sin que el edificio lo desmienta."
+          </blockquote>
+          <cite>— Octavio Paz</cite>
+        </div>
+
+        <div class="philosophy-pillars" data-animate="fade-left">
+          <div class="section-header" style="text-align:left; margin-bottom: 2.5rem;">
+            <span class="section-tag" style="color: #C0392B;">Nuestra Filosofía</span>
+            <h2 class="section-title">Diseño con<br/><span class="accent">Propósito</span></h2>
+          </div>
+
+          <div class="pillar">
+            <span class="pillar-num">I</span>
+            <div>
+              <h4>Contextualismo</h4>
+              <p>Cada proyecto nace del lugar: su historia, su clima, su gente. No imponemos formas, las descubrimos.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-num">II</span>
+            <div>
+              <h4>Sostenibilidad</h4>
+              <p>Construimos pensando en las generaciones futuras: materiales responsables, eficiencia energética, huella mínima.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <span class="pillar-num">III</span>
+            <div>
+              <h4>Humanismo</h4>
+              <p>El ser humano es la medida de todo. Diseñamos para las personas, no para los planos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROYECTOS
+  ═══════════════════════════════════════════ -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Nuestro trabajo</span>
+        <h2 class="section-title">Proyectos<br/><span class="accent">Destacados</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-card--large" data-animate="fade-up">
+          <div class="project-img">
+            <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="400" fill="#1c1c1c"/>
+              <rect x="0" y="200" width="600" height="200" fill="#141414"/>
+              <!-- Casa moderna abstracta -->
+              <rect x="100" y="120" width="400" height="200" fill="#2a2a2a"/>
+              <rect x="100" y="100" width="200" height="30" fill="#222"/>
+              <rect x="140" y="180" width="80" height="100" fill="#C0392B" opacity="0.6"/>
+              <rect x="240" y="160" width="120" height="120" fill="#333"/>
+              <rect x="370" y="190" width="60" height="80" fill="#C0392B" opacity="0.3"/>
+              <rect x="80" y="318" width="440" height="4" fill="#C0392B"/>
+            </svg>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Residencial · 2023</span>
+            <h3>Casa Pedregal</h3>
+            <p>Vivienda unifamiliar de 480 m² en el Pedregal de San Ángel. Integración entre lo natural y lo construido.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" data-delay="100">
+          <div class="project-img">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#1a1a1a"/>
+              <!-- Torre corporativa -->
+              <rect x="120" y="40" width="160" height="220" fill="#252525"/>
+              <rect x="120" y="40" width="6" height="220" fill="#C0392B" opacity="0.8"/>
+              <g fill="#C0392B" opacity="0.4">
+                <rect x="132" y="55" width="20" height="26"/>
+                <rect x="158" y="55" width="20" height="26"/>
+                <rect x="184" y="55" width="20" height="26"/>
+                <rect x="210" y="55" width="20" height="26"/>
+                <rect x="132" y="92" width="20" height="26"/>
+                <rect x="158" y="92" width="20" height="26"/>
+                <rect x="184" y="92" width="20" height="26"/>
+                <rect x="210" y="92" width="20" height="26"/>
+                <rect x="132" y="130" width="20" height="26"/>
+                <rect x="158" y="130" width="20" height="26"/>
+                <rect x="184" y="130" width="20" height="26"/>
+                <rect x="210" y="130" width="20" height="26"/>
+              </g>
+              <rect x="80" y="258" width="240" height="4" fill="#C0392B"/>
+            </svg>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Corporativo · 2022</span>
+            <h3>Torre Reforma 360</h3>
+            <p>Edificio de oficinas de 22 niveles con certificación LEED Gold.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" data-delay="200">
+          <div class="project-img">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#111"/>
+              <!-- Museo abstracto -->
+              <rect x="40" y="100" width="320" height="160" fill="#1e1e1e"/>
+              <rect x="40" y="100" width="320" height="8" fill="#C0392B"/>
+              <ellipse cx="200" cy="100" rx="80" ry="40" fill="#2a2a2a"/>
+              <rect x="80" y="140" width="240" height="80" fill="#222"/>
+              <g fill="none" stroke="#C0392B" stroke-width="1" opacity="0.5">
+                <line x1="120" y1="140" x2="120" y2="220"/>
+                <line x1="160" y1="140" x2="160" y2="220"/>
+                <line x1="200" y1="140" x2="200" y2="220"/>
+                <line x1="240" y1="140" x2="240" y2="220"/>
+                <line x1="280" y1="140" x2="280" y2="220"/>
+              </g>
+              <rect x="20" y="260" width="360" height="4" fill="#C0392B"/>
+            </svg>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Cultural · 2021</span>
+            <h3>Centro de Arte Oaxaca</h3>
+            <p>Galería y espacio para residencias artísticas integrada al paisaje histórico.</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-animate="fade-up" data-delay="300">
+          <div class="project-img">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#181818"/>
+              <!-- Conjunto residencial -->
+              <rect x="20" y="140" width="80" height="120" fill="#242424"/>
+              <rect x="110" y="110" width="80" height="150" fill="#2a2a2a"/>
+              <rect x="200" y="130" width="80" height="130" fill="#242424"/>
+              <rect x="290" y="100" width="90" height="160" fill="#2a2a2a"/>
+              <rect x="20" y="140" width="4" height="120" fill="#C0392B" opacity="0.6"/>
+              <rect x="110" y="110" width="4" height="150" fill="#C0392B" opacity="0.6"/>
+              <rect x="200" y="130" width="4" height="130" fill="#C0392B" opacity="0.6"/>
+              <rect x="290" y="100" width="4" height="160" fill="#C0392B" opacity="0.6"/>
+              <rect x="0" y="260" width="400" height="4" fill="#C0392B"/>
+            </svg>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Urbano · 2020</span>
+            <h3>Conjunto Tlatelolco</h3>
+            <p>Regeneración urbana de vivienda social con 280 unidades habitacionales.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOBRE NOSOTROS
+  ═══════════════════════════════════════════ -->
+  <section class="section section--alt" id="nosotros">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-logo-col" data-animate="fade-right">
+          <div class="about-logo-large">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="200" fill="#111"/>
+              <!-- J grande izquierda -->
+              <rect x="30" y="40" width="28" height="96" fill="#fff"/>
+              <rect x="8"  y="114" width="50" height="20" fill="#fff"/>
+              <rect x="8"  y="114" width="20" height="36" fill="#fff" rx="10"/>
+              <!-- J grande derecha -->
+              <rect x="86" y="40" width="28" height="96" fill="#C0392B"/>
+              <rect x="64" y="114" width="50" height="20" fill="#C0392B"/>
+              <rect x="64" y="114" width="20" height="36" fill="#C0392B" rx="10"/>
+              <!-- Línea base -->
+              <rect x="8" y="150" width="120" height="3" fill="#fff"/>
+              <!-- Nombre -->
+              <text x="8" y="178" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#888" letter-spacing="2">JESÚS JUÁREZ</text>
+              <text x="8" y="194" font-family="'Space Grotesk', sans-serif" font-size="9" fill="#C0392B" letter-spacing="3">ARQUITECTOS</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="about-content" data-animate="fade-left">
+          <span class="section-tag">Quiénes somos</span>
+          <h2 class="section-title">Jesús Juárez<br/><span class="accent">Arquitectos</span></h2>
+          <p class="about-lead">Fundado por el Arq. Jesús Juárez en 2006, el despacho nació con una visión clara: crear arquitectura que sirva a las personas y respete el contexto en el que habita.</p>
+          <p>Con sede en Ciudad de México y proyectos en todo el país, hemos construido una reputación basada en la excelencia técnica, la honestidad con el cliente y un profundo compromiso con el entorno urbano y natural.</p>
+          <p>Nuestro equipo multidisciplinario combina arquitectos, diseñadores e ingenieros que trabajan de forma colaborativa para entregar soluciones integrales, a tiempo y dentro del presupuesto acordado.</p>
+          <a href="#contacto" class="btn btn-primary" style="margin-top:1.5rem" data-testid="button-agenda">Agendar reunión</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════════ -->
+  <section class="section section--dark" id="contacto">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info" data-animate="fade-right">
+          <span class="section-tag">Hablemos</span>
+          <h2 class="section-title">Inicia tu<br/><span class="accent">Proyecto</span></h2>
+          <p>Cuéntanos sobre tu idea. La primera consulta es completamente gratuita.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Dirección</strong>
+                <span>Av. Insurgentes Sur 1234, Of. 801<br/>Col. Del Valle, CDMX</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <span>+52 (55) 1234 5678</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <strong>Correo</strong>
+                <span>hola@jjarquitectos.mx</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" data-animate="fade-left" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required data-testid="input-nombre"/>
+            <span class="form-error" id="error-nombre"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required data-testid="input-email"/>
+            <span class="form-error" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="tipo">Tipo de proyecto</label>
+            <select id="tipo" name="tipo" data-testid="select-tipo">
+              <option value="">Selecciona una opción</option>
+              <option value="residencial">Residencial</option>
+              <option value="comercial">Comercial</option>
+              <option value="cultural">Cultural / Institucional</option>
+              <option value="urbano">Urbanismo</option>
+              <option value="interiores">Diseño de interiores</option>
+              <option value="consultoria">Consultoría</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Tu mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente tu proyecto o consulta..." data-testid="input-mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" data-testid="button-enviar">
+            <span class="btn-text">Enviar Consulta</span>
+            <span class="btn-loading" style="display:none">Enviando...</span>
+          </button>
+          <div class="form-success" id="form-success" style="display:none">
+            ✓ Mensaje recibido. Te contactaremos en menos de 24 horas.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo">
+            <svg class="logo-svg" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="60" fill="#111"/>
+              <rect x="10" y="12" width="8" height="28" fill="#fff"/>
+              <rect x="2"  y="34" width="16" height="6" fill="#fff"/>
+              <rect x="2"  y="34" width="6"  height="10" fill="#fff" rx="3"/>
+              <rect x="26" y="12" width="8" height="28" fill="#C0392B"/>
+              <rect x="18" y="34" width="16" height="6" fill="#C0392B"/>
+              <rect x="18" y="34" width="6"  height="10" fill="#C0392B" rx="3"/>
+              <rect x="2" y="44" width="36" height="2" fill="#fff"/>
+            </svg>
+            <span class="logo-text">JJ <em>Arquitectos</em></span>
+          </a>
+          <p>Diseñamos con propósito.<br/>Construimos con precisión.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <ul>
+            <li><a href="#servicios">Arquitectura Residencial</a></li>
+            <li><a href="#servicios">Arquitectura Comercial</a></li>
+            <li><a href="#servicios">Diseño de Interiores</a></li>
+            <li><a href="#servicios">Urbanismo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Despacho</h5>
+          <ul>
+            <li><a href="#nosotros">Quiénes somos</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#filosofia">Filosofía</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contacto</h5>
+          <ul>
+            <li>+52 (55) 1234 5678</li>
+            <li>hola@jjarquitectos.mx</li>
+            <li>Insurgentes Sur 1234<br/>CDMX, México</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Jesús Juárez Arquitectos. Todos los derechos reservados.</p>
+        <p>Cedula Prof. ARQ-UNAM-0000123 | Reg. CMIC 456789</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón scroll top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Volver arriba" data-testid="button-scroll-top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
